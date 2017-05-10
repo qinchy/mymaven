@@ -16,7 +16,8 @@ public class Git {
 		for (String string : args) {
 			System.out.println(string);
 		}
-
+		
+		System.out.println("Git.main()");
 	}
 
 }

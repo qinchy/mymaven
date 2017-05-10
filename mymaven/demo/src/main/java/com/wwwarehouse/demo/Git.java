@@ -18,6 +18,8 @@ public class Git {
 		}
 		
 		System.out.println("Git.main()");
+		
+		System.exit(-1);
 	}
 
 }

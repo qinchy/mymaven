@@ -19,7 +19,7 @@ public class Git {
 		
 		System.out.println("Git.main()");
 		
-		// Õý³£ÍË³ö
+		// æ­£å¸¸é€€å‡º
 		System.exit(0);
 
 	}

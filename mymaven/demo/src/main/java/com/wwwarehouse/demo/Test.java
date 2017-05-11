@@ -85,6 +85,7 @@ public class Test {
 		// hash检测
 		testHash();
 		shardedJedisPool.returnResource(shardedJedis);
+		jedisPool.returnResource(jedis);
 	}
 
 	private void testKey() {

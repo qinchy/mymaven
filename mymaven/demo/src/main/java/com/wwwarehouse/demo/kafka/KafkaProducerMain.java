@@ -22,14 +22,17 @@ public class KafkaProducerMain {
 		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
 		Producer<String, String> producer = new KafkaProducer<>(props);
-		for (int i = 0; i < 100; i++)
-			producer.send(new ProducerRecord<String, String>("my-replicated-topic", Integer.toString(i), Integer.toString(i)),new Callback(){
-				@Override
-				public void onCompletion(RecordMetadata metadata, Exception exception) {
-					System.out.println("发送成功到分区："+metadata.partition()+" 偏移量："+metadata.offset());
-				}
-			});
-
+		for (int i = 0; i < 100; i++) {
+			producer.send(
+					new ProducerRecord<String, String>("my-replicated-topic", Integer.toString(i), Integer.toString(i)),
+					new Callback() {
+						@Override
+						public void onCompletion(RecordMetadata metadata, Exception exception) {
+							System.out.printf("发送成功到分区：%d 偏移量：%d%n", metadata.partition(), metadata.offset());
+						}
+					});
+		}
+		
 		producer.close();
 
 	}

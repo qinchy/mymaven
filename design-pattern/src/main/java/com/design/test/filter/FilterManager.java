@@ -14,7 +14,7 @@ public class FilterManager {
 		return _instance;
 	}
 
-	public FilterManager() {
+	private FilterManager() {
 
 	}
 

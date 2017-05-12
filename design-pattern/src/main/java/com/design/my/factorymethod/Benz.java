@@ -1,16 +1,10 @@
-package com.design.my.factorymethod;
+package com.design.my.abstracefactory;
 
-/**
- * 
- * @author chaoyong.qin
- *
- */
-class Benz implements Car {
-	public void run() {
-		System.out.println("Benz开始启动了。。。。。");
+public class Benz implements Car {
+
+	@Override
+	public void drive() {
+		System.out.println("drive benz");
 	}
 
-	public void stop() {
-		System.out.println("Benz停车了。。。。。");
-	}
 }

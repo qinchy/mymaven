@@ -1,12 +1,12 @@
-package com.design.my.factorymethod;
-
 /**
  * 
+ */
+package com.design.my.abstracefactory;
+
+/**
  * @author chaoyong.qin
  *
  */
-interface Car {
-	public void run();
-
-	public void stop();
+public interface Car {
+	public void drive();
 }

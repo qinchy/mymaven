@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.design.my.abstracefactory;
+package com.design.my.factorymethod;
 
 /**
  * @author chaoyong.qin

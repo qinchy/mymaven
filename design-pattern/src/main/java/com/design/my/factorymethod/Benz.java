@@ -1,4 +1,4 @@
-package com.design.my.abstracefactory;
+package com.design.my.factorymethod;
 
 public class Benz implements Car {
 

@@ -17,6 +17,14 @@ public class Git {
 			System.out.println(string);
 		}
 
+		System.out.println("Git.main()");
+
+		if (1 == 1)
+			System.out.println(111);
+
+		// 正常退出
+		System.exit(0);
+
 	}
 
 }

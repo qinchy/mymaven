@@ -16,6 +16,11 @@ public class Git {
 		for (String string : args) {
 			System.out.println(string);
 		}
+		
+		System.out.println("Git.main()");
+		
+		// 正常退出
+		System.exit(0);
 
 		System.out.println("Git.main()");
 
